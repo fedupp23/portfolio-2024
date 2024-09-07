@@ -3,16 +3,16 @@ import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 export const HeroSection = () => {
   return (
-    <div className='py-24'>
+    <div className='py-[90px] md:py-48'>
       <div className="container">
         <div className='flex flex-col items-center'>
           <Image src={memojiImage} className='size-[100px]' alt='person peeking from behind the laptop' />
-          <div className='bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
+          <div className='bg-gray-950 border border-gray-700 px-4 py-[8px] inline-flex items-center gap-4 rounded-lg'>
             <div className='bg-green-500 size-2.5 rounded-full'></div>
             <div className='text-sm font-medium'> Available for new projects</div>
           </div>
         </div>
-          <h1 className='font-serif text-3xl text-center mt-6 tracking-wide font-light overflow-hidden'>Building exceptional User Experiences</h1>
+          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide font-light overflow-hidden'>Building exceptional User Experiences</h1>
           <p className='mt-4 text-center text-white/60 overflow-hidden'>I specialize in transforming designs into funtional,high-performance web applications .Let&apos;s discuss your next project</p>
           <div className='flex flex-col items-center mt-8 gap-4'>
             <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
