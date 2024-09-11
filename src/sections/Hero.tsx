@@ -8,13 +8,14 @@ import SparkleIcon from '@/assets/icons/sparkle.svg';
 export const HeroSection = () => {
   return (
     <div className='py-[90px]  md:py-48 lg:py-48  relative z-0 overflow-x-clip'>
+      <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
       <div className='absolute inset-0 -z-50 h-screen opacity-5'style={{backgroundImage:`url(${grainImage.src})`,top:'0'}}></div>
       <div  className='size-[620px] hero-ring'></div>
       <div  className='size-[820px] hero-ring'></div>
-      <div  className='size-[1020px] hero-ring'></div>
+      {/* <div  className='size-[1020px] hero-ring'></div> */}
       <div  className='size-[1220px] hero-ring '></div>
       {/* <div  className='size-[1440px] hero-ring '></div> */}
-      {/* <div  className='size-[1600px] hero-ring '></div> */}
+      <div  className='size-[1600px] hero-ring '></div>
       <HeroOrbit size={910} rotation={-32}>
         <StarIcon className='size-[100px] text-emerald-300' />
       </HeroOrbit>
@@ -42,6 +43,7 @@ export const HeroSection = () => {
       <HeroOrbit size={850} rotation={45}>
         <div className='size-2 rounded-full bg-emerald-300/20' />
       </HeroOrbit>
+      </div>
       <div className="container mx-auto">
         <div className='flex flex-col items-center overflow-hidden'>
           <Image src={memojiImage} className='w-[100px]' alt='person peeking from behind the laptop' />
