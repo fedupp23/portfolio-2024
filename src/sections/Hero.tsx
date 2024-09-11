@@ -4,6 +4,7 @@ import ArrowDown from '@/assets/icons/arrow-down.svg';
 import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import { HeroOrbit } from '@/components/HeroOrbit';
+import SparkleIcon from '@/assets/icons/sparkle.svg';
 export const HeroSection = () => {
   return (
     <div className='py-[90px]  md:py-48 lg:py-48  relative z-0 overflow-x-clip'>
@@ -12,10 +13,34 @@ export const HeroSection = () => {
       <div  className='size-[820px] hero-ring'></div>
       <div  className='size-[1020px] hero-ring'></div>
       <div  className='size-[1220px] hero-ring '></div>
-      <div  className='size-[1440px] hero-ring '></div>
-      <div  className='size-[1600px] hero-ring '></div>
-      <HeroOrbit size={800} rotation={45}>
-        <StarIcon className='size-28 text-emerald-300' />
+      {/* <div  className='size-[1440px] hero-ring '></div> */}
+      {/* <div  className='size-[1600px] hero-ring '></div> */}
+      <HeroOrbit size={910} rotation={-32}>
+        <StarIcon className='size-[100px] text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={950} rotation={15}>
+        <StarIcon className='size-12 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={910} rotation={140}>
+        <StarIcon className='size-8 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={810} rotation={-130}>
+        <SparkleIcon className='size-8 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={640} rotation={48}>
+        <SparkleIcon className='size-5 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={990} rotation={179}>
+        <SparkleIcon className='size-16 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={720} rotation={110}>
+        <div className='size-3 rounded-full bg-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={620} rotation={-12}>
+        <div className='size-2 rounded-full bg-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={850} rotation={45}>
+        <div className='size-2 rounded-full bg-emerald-300/20' />
       </HeroOrbit>
       <div className="container mx-auto">
         <div className='flex flex-col items-center overflow-hidden'>
